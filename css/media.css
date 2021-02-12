@@ -1,0 +1,309 @@
+
+
+@media (max-width: 768px) { 
+  .footer__inner{
+    justify-content: space-around;
+  }
+  .footer__bottom-inner{
+    
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer__bottom-inner div + div{
+    margin-bottom: 20px;
+  }
+}
+
+
+  @media (max-width: 1200px) {
+    .testimonials__nav{
+        flex-wrap: wrap;
+        max-width: 80%;
+        margin: 0 auto 5px;
+    }
+    .testimonials{
+        overflow: hidden;
+    }
+    .testimonials__nav li + li{
+        margin-bottom: 70px;
+    }
+}
+
+
+@media (max-width: 1050px){
+    .face{
+        height: 960px;
+    }
+    .brand__box{
+        margin-bottom: 25px;
+    }
+    .testimonials__inner{
+        justify-content: space-around;
+    }
+    .testimonials__nav{
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .blog__inner{
+        justify-content: space-around;
+    }
+    .blog__inner div + div{
+        margin-top: 30px;
+    }
+    .gallery__inner{
+      max-width: 833px;
+      margin: 0 auto;
+      text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    body.lock {
+      overflow: hidden;
+    }
+    .header__menu1,
+    .header__menu2{
+      display: none;
+    }
+    .header__body {
+      height: 50px;
+    }
+    .burger__logo-img {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 40px;
+              flex: 0 0 40px;
+              margin-left: 0;
+              margin-bottom: 40px;
+    }
+    .header__logo{
+      margin-left: 0;
+    }
+    .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 22px;
+      z-index: 3;
+    }
+    .header__burger span {
+      background-color: #fff;
+      position: absolute;
+      width: 26px;
+      height: 4px;
+      left: 0;
+      top: 9px;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+    .header__burger:before,
+    .header__burger:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+    .header__burger:before {
+      top: 0;
+    }
+    .header__burger:after {
+      bottom: 0;
+    }
+    .header__burger.active:before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 9px;
+    }
+    .header__burger.active:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    .header__burger.active span {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    
+    .header__menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /*для прокрутки меню, когда оно не помещается в экран*/
+      overflow: auto;
+      background-color: #333;
+      padding: 15px 10px 20px 15px;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+    .popup, .register__popup{
+      width: 80%;
+    }
+    .popup__input-item{
+      width: 100%;
+    }
+    .popup__descr{
+      display: block;
+    }
+    .register__link, .login__link{
+      margin-left: 0;
+    }
+    .popup__input-item {
+      padding: 12px 0 12px 7px;
+  }
+    .header__menu.active {
+      top: 0;
+    }
+    .header__list {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .header__list li {
+      margin: 0 0 30px 0;
+    }
+    .header__link {
+      font-size: 21px;
+    }
+
+    .registration::after{
+      content: '';
+      display: block;
+      margin-top: 35px;
+      border: 1px solid #fff;
+      width: 90%;
+      height: 1px;
+    }
+
+    .burger__social::before{
+      content: '';
+      display: block;
+      margin-bottom: 26px;
+      border: 1px solid #fff;
+      width: 90%;
+      height: 1px;
+    }
+
+    .burger__social-items{
+      display: flex;
+      align-items: center;
+    }
+    .burger__social-items a + a{
+      margin-left: 31px;
+    }
+  }
+  
+  .content {
+    padding: 100px 0 0 0;
+  }
+
+  @media (max-width: 830px){
+    .gallery__inner{
+      width: 555px;
+      margin: 0 auto;
+    }
+  }
+
+
+@media (max-width: 756px){
+    .testimonials {
+        margin-bottom: 50px;
+    }
+    .salon__info{
+        width: 90%;
+    }
+    .salon{
+        margin-bottom: 40px;
+    }
+    .subscribe__inner{
+      display: block;
+    }
+    .subscribe__list{
+      margin-bottom: 30px;
+    }
+    .subscribe__form{
+      margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .brands{
+        display: none;
+    }
+    .face{
+        height: 530px;
+        background-size: 1100px ;
+    }
+    .main{
+        padding-top: 250px;
+    }
+    .main__link{
+        background: #333;
+    }
+    .testimonials {
+    margin-bottom: 0px;
+    }
+    .salon__title{
+        margin-bottom: 25px;
+    }
+    .salon{
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 555px){
+  .gallery__inner{
+    width: 350px;
+  }
+  .gallery__box{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .gallery__img-big{
+    width: 350px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .play__btn-img{
+    top: 78px;
+  }
+}
+
+@media (max-width: 528px){
+  .footer__list + .footer__list{
+    margin-bottom: 0;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 467px){
+  .subscribe__form-box{
+    display: block;
+    height: auto;
+    width: auto;
+  }
+  .subscribe__form-input{
+    width: 100%;
+  }
+  .subscribe__form {
+    width: 345px;
+  }
+  .subscribe__form-item{
+    margin-bottom: 25px;
+  }
+  .subscribe__link-item{
+    text-align: center;
+  }
+  .subscribe__form{
+    height: 165px;
+  }
+}
+
+
